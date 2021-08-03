@@ -103,16 +103,25 @@ buttonLeg.addEventListener("submit", (e) => {
   let inputFirstLeg = parseInt(firstLeg.value);
   let inputSecondLeg = parseInt(secondLeg.value);
   let inputThirdLeg = parseInt(thirdLeg.value);
-
   if (
+    inputFirstLeg === inputSecondLeg &&
+    inputFirstLeg === inputThirdLeg &&
+    inputSecondLeg === inputThirdLeg
+  ) {
+    answerLeg.textContent = ` equilateral`;
+  } else if (
     inputFirstLeg == inputSecondLeg ||
     inputFirstLeg == inputThirdLeg ||
     inputSecondLeg == inputThirdLeg
   ) {
     answerLeg.textContent = ` iso`;
-  } else {
-    answerLeg.textContent = ` tow side must equal`;
   }
+
+  // ) {
+  //   answerLeg.textContent = ` iso`;
+  // } else {
+  //   answerLeg.textContent = ` tow side must equal`;
+  // }
 });
 
 let base = document.querySelector(".base");
@@ -128,4 +137,38 @@ buttonHypo.addEventListener("submit", (e) => {
   let baseAndHeight = baseLength ** 2 + heightLength ** 2;
   let hypotenuse = Math.sqrt(baseAndHeight);
   answerHypo.textContent = hypotenuse;
+});
+
+let baseAr = document.querySelector(".basear");
+let heightAr = document.querySelector(".heightar");
+let buttonAr = document.querySelector(".sixthform");
+let answerAr = document.querySelector(".resultar");
+
+let sideA = document.querySelector(".sidea");
+let sideB = document.querySelector(".sideb");
+let sideC = document.querySelector(".sidec");
+let answerArea = document.querySelector(".resultarea");
+
+buttonAr.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let inputBase = parseInt(baseAr.value);
+  let inputheight = parseInt(heightAr.value);
+
+  let areaOfTriangle = (inputBase * inputheight) / 2;
+  answerAr.textContent = `Area of Triangle is ${areaOfTriangle}`;
+
+  let inputSideA = parseInt(sideA.value);
+  let inputSideB = parseInt(sideB.value);
+  let inputSideC = parseInt(sideC.value);
+  let semiperimeter = (inputSideA + inputSideB + inputSideC) / 2;
+
+  let areaCalculation =
+    semiperimeter *
+    (semiperimeter - inputSideA) *
+    (semiperimeter - inputSideB) *
+    (semiperimeter - inputSideC);
+
+  let areaOfTriangleWithSides = Math.sqrt(areaCalculation);
+  answerArea.textContent = `Area of Triangle if 3 sides given is - ${areaOfTriangleWithSides}`;
 });
