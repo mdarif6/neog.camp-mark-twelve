@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Triangle Quiz</title>
+  </head>
+  <body>
+    <h1>Triangle</h1>
+    <div>
+      <h3>Sum of Triangle = 180</h3>
+      <h4>
+        Give Angles of Triangle and let you know whether it can make a Triangle
+        or not-
+      </h4>
+    </div>
+
+    <form class="firstform">
+        <input class="a" type="number" min="0" required> </input>
+        <input class="b" type="number" min="0" required> </input> 
+        <input class="c" type="number" min="0" required> </input> 
+        <button class="button"> check</button>
+        <div class="answer"></div>
+  </form>
+
+  <form  class="secondform">
+        <div>
+            <h1>Find out Third Angle</h1>
+            <h4>Enter two angles and take out thirdone</h4>
+            <div>
+                <input class="thirda" type="number" min="0" required > </input>
+                <input class="thirdb" type="number" min="0" required></input> 
+                
+                <button class="thirdbutton"> ThirdAngle</button>
+                <div class="thirdanswer"></div>
+
+        </div>
+    </div>
+  </form>
+
+<form class="thirdform">
+    <div>
+      <h1>Find out right, obtuse accute angles</h1>
+
+      <div>
+        <input class="firstangleprop" type="number" min="0" required > </input>
+        <input class="secondangleprop" type="number" min="0" required></input> 
+        <input class="thirdangleprop" type="number" min="0" required></input> 
+        
+        <button class="buttonprop"> chec property</button>
+        <div class="answerprop"></div>
+
+    </div>
+
+</form>
+
+
+<form class="fourthform">
+  <div>
+    <h1>Find out iso and equilateral triangles</h1>
+
+    <div>
+      <input class="firstleg" type="number" min="0" required > </input>
+      <input class="secondleg" type="number" min="0" required></input> 
+      <input class="thirdleg" type="number" min="0" required></input> 
+      
+      <button class="buttonleg"> chec iso/equi</button>
+      <div class="answerleg"></div>
+
+  </div>
+
+</form>
+
+
+<form class="fifthform">
+  <div>
+    <h1>Find out Hypoten</h1>
+
+    <div>
+      <input class="base" type="number" min="0" required > </input>
+      <input class="height" type="number" min="0" required></input> 
+      
+      <button class="checkhypo"> Submit</button>
+      <div class="resulthypo"></div>
+
+  </div>
+
+</form>
+
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
