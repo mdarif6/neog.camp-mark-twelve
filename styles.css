@@ -1,9 +1,30 @@
-.mainpagebutton {
-  width: 60%;
-  margin: 0.5rem;
+.container {
+  width: 600px;
+  margin: 0 auto;
   padding: 1rem;
+  background-color: aquamarine;
 }
 
 .mainpageforms {
   font-size: large;
+  padding: 1rem;
+}
+
+.firstform {
+  text-decoration: none;
+}
+.secondform {
+  text-decoration: none;
+}
+.thirdform {
+  text-decoration: none;
+}
+.fourthform {
+  text-decoration: none;
+}
+.fifthform {
+  text-decoration: none;
+}
+.sixthform {
+  text-decoration: none;
 }

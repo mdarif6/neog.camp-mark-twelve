@@ -8,23 +8,22 @@
     <title>Triange Quiz | Triangle Check</title>
   </head>
   <body>
-
-    <h1>Triangle</h1>
+    <a class="homepage" href="/index.html" > Go to Home Page</a>
+    <h1>Check Triangle </h1>
     <div>
-      <h3>Sum of Triangle = 180</h3>
+      <h3>Sum of Triangle must 180</h3>
       <h4>
-        Give Angles of Triangle and let you know whether it can make a Triangle
-        or not-
+        Enter three angles and check whether it can make a Triangle or not:-
       </h4>
     </div>
 
     <form class="firstform">
-        <input class="a" type="number" min="0" required> </input>
-        <input class="b" type="number" min="0" required> </input> 
-        <input class="c" type="number" min="0" required> </input> 
-        <button class="button"> check</button>
+        <input class="a" type="number" placeholder="enter first angle" min="0" required> </input>
+        <input class="b" type="number" placeholder="enter second angle" min="0" required> </input> 
+        <input class="c" type="number" placeholder="enter third angle" min="0" required> </input> 
+        <button class="button">Submit</button>
         <div class="answer"></div>
   </form>
-  <script src="app.js" type="text/javascript"></script>
+  <script src="trianglecheck.js" type="text/javascript"></script>
   </body>
 </html>
