@@ -31,9 +31,18 @@ buttonArea.addEventListener("submit", (e) => {
 
   if (inputSideA == 0 || inputSideB == 0 || inputSideC == 0) {
     answerArea.textContent = `Any Side of Triangle can not be Zero`;
+    return;
   }
   let semiperimeter = (inputSideA + inputSideB + inputSideC) / 2;
 
+  if (
+    semiperimeter < inputSideA ||
+    semiperimeter < inputSideB ||
+    semiperimeter < inputSideC
+  ) {
+    answerArea.textContent = `Semiperimeter can not less to any side`;
+    return;
+  }
   let areaCalculation =
     semiperimeter *
     (semiperimeter - inputSideA) *
