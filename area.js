@@ -1,10 +1,31 @@
 let baseAr = document.querySelector(".basear");
 let heightAr = document.querySelector(".heightar");
-let buttonAr = document.querySelector(".sixthform");
+let buttonAr = document.querySelector(".area-bh-inputs");
 let answerAr = document.querySelector(".resultar");
 
+const areaoneSection = document.querySelector(".areaone-section");
+const areatwoSection = document.querySelector(".areatwo-section");
+
+areaoneSection.style.display = "none";
+areatwoSection.style.display = "none";
+
+document.body.addEventListener("change", (e) => {
+  if (e.target.value === "bybaseheight") {
+    areaoneSection.style.display = "";
+    areatwoSection.style.display = "none";
+  }
+
+  if (e.target.value === "bysides") {
+    areatwoSection.style.display = "";
+    areaoneSection.style.display = "none";
+  }
+});
+
+answerAr.style.display = "none";
 buttonAr.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  answerAr.style.display = "";
 
   let inputBase = parseInt(baseAr.value);
   let inputheight = parseInt(heightAr.value);
@@ -20,11 +41,16 @@ buttonAr.addEventListener("submit", (e) => {
 let sideA = document.querySelector(".sidea");
 let sideB = document.querySelector(".sideb");
 let sideC = document.querySelector(".sidec");
-let buttonArea = document.querySelector(".seventhform");
+let buttonArea = document.querySelector(".area-seides-inputs");
 let answerArea = document.querySelector(".resultarea");
+
+answerArea.style.display = "none";
 
 buttonArea.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  answerArea.style.display = "";
+
   let inputSideA = parseInt(sideA.value);
   let inputSideB = parseInt(sideB.value);
   let inputSideC = parseInt(sideC.value);

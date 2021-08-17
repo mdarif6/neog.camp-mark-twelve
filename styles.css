@@ -1,30 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  /* background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+:root {
+  --body-color: #ddd6fe;
+  --primary-color: #8b5cf6;
+  --gray-color: #6b7280;
+}
+
+.triangle-header {
+  text-align: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-img {
+  max-width: 300px;
+  display: block;
+}
 .container {
-  width: 600px;
-  margin: 0 auto;
   padding: 1rem;
-  background-color: aquamarine;
 }
 
 .mainpageforms {
   font-size: large;
+  padding: 0.5rem;
+}
+
+.link {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+.link:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.triangle-homepage {
+  padding-top: 3rem;
+}
+
+.homepage {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.trianglecheck-header {
+  text-align: center;
+  color: var(--gray-color);
+}
+
+.trianglecheck-section {
+  background-color: var(--primary-color);
+  max-width: 600px;
+  margin: auto;
+  display: block;
+}
+
+.trianglecheck-section-heading {
+  text-align: center;
+  color: white;
   padding: 1rem;
 }
 
-.firstform {
-  text-decoration: none;
+.trianglecheck-inputs {
+  text-align: center;
+  padding-top: 1rem;
 }
-.secondform {
-  text-decoration: none;
+.a,
+.b,
+.c {
+  width: 40%;
+  padding: 1rem;
+  margin: 0.5rem;
 }
-.thirdform {
-  text-decoration: none;
+
+.trianglecheck-section .button {
+  width: 30%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
 }
-.fourthform {
-  text-decoration: none;
+.trianglecheck-section .button:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
-.fifthform {
-  text-decoration: none;
+
+.answer {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
-.sixthform {
-  text-decoration: none;
+
+.thirdangle-section {
+  background-color: var(--primary-color);
+  color: white;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.thirdangle-inputs {
+  text-align: center;
+  padding: 1rem;
+}
+.thirdangle-inputs .thirda,
+.thirdb {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.thirdangle-inputs .thirdbutton {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.thirdangle-inputs .thirdbutton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.thirdanswer {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.triangleprop-header {
+  text-align: center;
+  color: var(--gray-color);
+}
+
+.triangleprop-section {
+  background-color: var(--primary-color);
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+.triangleprop-section h4 {
+  padding-top: 1rem;
+  color: white;
+}
+.firstangleprop,
+.secondangleprop,
+.thirdangleprop {
+  width: 30%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.buttonprop {
+  width: 30%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.answerprop {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+.isoequi-header {
+  text-align: center;
+  color: var(--gray-color);
+}
+.isoandequi-section {
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  background-color: var(--primary-color);
+}
+
+.isoandequi-inputs {
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+.isoandequi-inputs h3 {
+  padding-top: 1rem;
+  color: white;
+}
+
+.firstleg,
+.secondleg,
+.thirdleg {
+  width: 40%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.buttonleg {
+  width: 20%;
+  padding: 1rem;
+}
+
+.answerleg {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.hypotenuse-header {
+  color: var(--gray-color);
+  text-align: center;
+}
+.hypotenuse-section {
+  background-color: var(--primary-color);
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.hypotenuse-section h3 {
+  padding-top: 1rem;
+  color: white;
+}
+.base,
+.height {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.checkhypo {
+  width: 20%;
+  padding: 1rem;
+}
+
+.resulthypo {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.radiobh,
+.radioside {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.radiobh:hover,
+.radioside:hover {
+  background-color: var(--primary-color);
+
+  border-radius: 0.5rem;
+}
+.areaone-section {
+  background-color: var(--primary-color);
+  max-width: 40%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.area-heading {
+  margin: 1rem;
+  color: white;
+}
+
+.basear,
+.heightar {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.checkar {
+  padding: 1rem;
+}
+
+.resultar {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+.areatwo-section {
+  background-color: var(--primary-color);
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.sidea,
+.sideb,
+.sidec {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.checkarea {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.resultarea {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem;
 }

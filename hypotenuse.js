@@ -1,10 +1,14 @@
 let base = document.querySelector(".base");
 let height = document.querySelector(".height");
-let buttonHypo = document.querySelector(".fifthform");
+let buttonHypo = document.querySelector(".hypotenuse-inputs");
 let answerHypo = document.querySelector(".resulthypo");
+
+answerHypo.style.display = "none";
 
 buttonHypo.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  answerHypo.style.display = "";
 
   let baseLength = parseInt(base.value);
   let heightLength = parseInt(height.value);

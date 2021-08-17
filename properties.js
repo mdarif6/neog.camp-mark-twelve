@@ -2,10 +2,14 @@ let firstAngleProp = document.querySelector(".firstangleprop");
 let secondAngleProp = document.querySelector(".secondangleprop");
 let thirdAngleProp = document.querySelector(".thirdangleprop");
 let answerProp = document.querySelector(".answerprop");
-let checkProp = document.querySelector(".thirdform");
+let checkProp = document.querySelector(".triangleprop-inputs");
+
+answerProp.style.display = "none";
 
 checkProp.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  answerProp.style.display = "";
 
   let inputAngleFirstProp = parseInt(firstAngleProp.value);
   let inputAngleSecondProp = parseInt(secondAngleProp.value);

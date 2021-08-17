@@ -2,10 +2,13 @@ let oneAngle = document.querySelector(".thirda");
 let secAngle = document.querySelector(".thirdb");
 let thirAngle = document.querySelector(".thirdanswer");
 let thirdanswer = document.querySelector(".thirdanswer");
-let toFindoutThirdAngle = document.querySelector(".secondform");
+let toFindoutThirdAngle = document.querySelector(".thirdangle-inputs");
 
+thirdanswer.style.display = "none";
 toFindoutThirdAngle.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  thirdanswer.style.display = "";
 
   let inputAngleFirst = parseInt(oneAngle.value);
   let inputAngleSecond = parseInt(secAngle.value);

@@ -9,22 +9,23 @@
   </head>
   <body>
 
-    <a class="homepage" href="/index.html" > Go to Home Page</a>
-    <form class="fifthform">
-        <div>
-          <h1>Find out Hypotenuse of a Triangle</h1>
-      
-          <div>
-            <input class="base" type="number" placeholder="Enter Base of Triangle" min="0" required > </input>
-            <input class="height" type="number" placeholder="Enter Height of Triangle" min="0" required></input> 
-            
-            <button class="checkhypo"> Submit</button>
-            <div class="resulthypo"></div>
-      
-        </div>
-      
+    <div class="triangle-homepage"><a class="homepage" href="/index.html" > Go to Home Page</a></div>
+
+    <header class="hypotenuse-header">
+      <h1>Find out Hypotenuse of a Triangle</h1>
+    </header>
+    <section class="hypotenuse-section">
+
+      <form class="hypotenuse-inputs">
+       
+          <h3>Enter Base and Height of a Triangle</h3>      
+ <div> <input class="base" type="number" placeholder="Enter Base of Triangle" min="0" required > </input></div>          
+  <div> <input class="height" type="number" placeholder="Enter Height of Triangle" min="0" required></input>  </div>                   
+   <div> <button class="checkhypo"> Submit</button></div>        
+            <div class="resulthypo"></div>               
       </form>
 
+    </section>
 
     <script src="hypotenuse.js" type="text/javascript"></script>
   </body>

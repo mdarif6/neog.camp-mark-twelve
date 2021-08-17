@@ -1,11 +1,15 @@
 let firstLeg = document.querySelector(".firstleg");
 let secondLeg = document.querySelector(".secondleg");
 let thirdLeg = document.querySelector(".thirdleg");
-let buttonLeg = document.querySelector(".fourthform");
+let buttonLeg = document.querySelector(".isoandequi-inputs");
 let answerLeg = document.querySelector(".answerleg");
+
+answerLeg.style.display = "none";
 
 buttonLeg.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  answerLeg.style.display = "";
 
   let inputFirstLeg = parseInt(firstLeg.value);
   let inputSecondLeg = parseInt(secondLeg.value);
