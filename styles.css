@@ -330,3 +330,27 @@ body {
   padding: 1rem;
   margin: 2rem;
 }
+
+.radio-parent {
+  max-width: 700px;
+  margin: auto;
+  display: block;
+}
+
+.radio-questions {
+  margin: 2rem;
+}
+
+.question-button {
+  text-align: center;
+}
+
+.quizbutton {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.quizoutput {
+  text-align: center;
+  padding: 1rem;
+}
